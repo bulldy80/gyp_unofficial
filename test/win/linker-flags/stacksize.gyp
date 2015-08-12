@@ -15,7 +15,7 @@
       'sources': ['hello.cc'],
       'msvs_settings': {
         'VCLinkerTool': {
-          'StackReserveSize': 4096,
+          'StackReserveSize': 2097152,  # 2MB
         }
       },
     },
@@ -25,7 +25,7 @@
       'sources': ['hello.cc'],
       'msvs_settings': {
         'VCLinkerTool': {
-          'StackCommitSize': 4096,
+          'StackCommitSize': 8092,  # 8KB
         }
       },
     },
@@ -35,8 +35,8 @@
       'sources': ['hello.cc'],
       'msvs_settings': {
         'VCLinkerTool': {
-          'StackReserveSize': 4096,
-          'StackCommitSize': 4096,
+          'StackReserveSize': 2097152,  # 2MB
+          'StackCommitSize': 8092,  # 8KB
         }
       },
     },
