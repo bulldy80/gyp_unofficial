@@ -52,11 +52,11 @@ if sys.platform == 'win32':
 
   # Verify that setting both works:
   #     200000h = 2MB
-  #     1F9Ch   = 8KB
+  #     2000h   = 8KB
   set_both_headers = GetHeaders('test_set_both.exe')
   if '200000 size of stack reserve' not in set_both_headers:
     test.fail_test()
-  if '1F9C size of stack commit' not in set_both_headers:
+  if '2000 size of stack commit' not in set_both_headers:
     test.fail_test()
 
   test.pass_test()
